@@ -24,7 +24,7 @@ const corsOptions ={
   optionSuccessStatus:200,
 }
 
-
+//
 app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(express.static("public"));
