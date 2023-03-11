@@ -1,7 +1,7 @@
 
 <b><i><h1 style="font-style: bold; font-size: 40px;">The Same Page </h1></i></b>
 
-...
+A question game inspired by Cuts take on bringing together couples / love interests and helping them ask the important questions making sure they are on the same page.  
 
 ## <i>Screenshots</i> 
 

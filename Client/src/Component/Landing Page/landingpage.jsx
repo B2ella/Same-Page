@@ -12,7 +12,7 @@ const Landing = () => {
         
          
          
-        <div className="flex flex-col mr-20 sm:flex-row lg:flex-row xl:flex-row sm:gap-10 lg:gap-20 xl:gap-10 justify-center items-center ">
+        <div className="flex flex-col  sm:flex-row lg:flex-row xl:flex-row sm:gap-10 lg:gap-20 xl:gap-10 justify-center items-center ">
         
         
         <GenericCard color="linear-gradient( #26444E, #000000 )">

@@ -24,7 +24,7 @@ const TheStart = () => {
         
         <h1 className="text-white flex justify-center text-3xl font-thin relative top-20">Choose your topic of discussion.</h1>
           <Swiper
-            slidesPerView={3.5}
+            slidesPerView={3.1}
             spaceBetween={1}
             freeMode={true}
             pagination={{
