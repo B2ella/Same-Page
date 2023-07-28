@@ -5,20 +5,20 @@ import {Title, Title2} from '../Title/title';
 const Love = () => {
     const [question, setQuestion] = useState(['Click to start'])
 
-    const getQuestion = async () => {
-        const response = await fetch("http://localhost:3000/love", {
-            method: "GET",
-            headers: {
-                 'Content-Type': 'application/json'
-             }
-        });
-        
-        const data = await response.json();
-        setQuestion(data.payload);
-    };
-
+    
     useEffect(() => {
-     
+        const getQuestion = async () => {
+            const response = await fetch("http://localhost:3000/love", {
+                method: "GET",
+                headers: {
+                     'Content-Type': 'application/json'
+                 }
+            });
+            
+            const data = await response.json();
+            setQuestion(data.payload);
+        };
+        getQuestion()
     }, []);
     
 
@@ -30,7 +30,7 @@ const Love = () => {
     
         <Card color="linear-gradient( #ad438f, #000000 )" >
         <div className='flex justify-center items-center mt-10'>
-            <button className='text-white text-xl mt-28 font-thin px-14' onClick={() => getQuestion()}>{question}</button>
+            <button className='text-white text-xl mt-28 font-thin px-14' onClick={() => setQuestion()}>{question}</button>
             </div>
             </Card> 
             </div>
